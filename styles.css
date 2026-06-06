@@ -62,9 +62,15 @@ img {
 }
 
 .image{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.z-index {
+    position: relative;
+    z-index: 2;
 }
 
 /*Header*/
@@ -72,6 +78,7 @@ header{
     width: 100%;
     background-color: var(--light-three);
     overflow: hidden;
+    position: relative;
 }
 
 nav{
@@ -85,6 +92,7 @@ nav .container{
     justify-content: space-between;
     height: 6rem;
     align-items: center;
+    padding-left: 8rem;
 }
 
 .logo{
@@ -130,6 +138,7 @@ nav .container{
     min-height: calc(100vh - 6rem);
     padding-bottom: 2.5rem;
     text-align: left;
+    padding-left: 8rem;
 }
 
 .header-title {
@@ -168,5 +177,113 @@ nav .container{
     border: 1rem solid var(--light-three);
     border-radius: 50%;
     box-shadow: 1px 2px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.overlay .shape {
+    width: initial;
+    opacity: 0.13;
+    position: absolute;
+}
+
+.overlay.overlay-lg .shape {
+    height: 35px;
+}
+
+.overlay.overlay-lg .shape.wave {
+    height: initial;
+    width: 88px;
+}
+
+.overlay.overlay-lg .shape.xshape {
+    height: 38px;
+}
+
+.overlay.overlay-sm .shape {
+  filter: brightness(0) invert(1);
+  opacity: 0.15;
+  height: 40px;
+}
+
+.overlay.overlay-sm .shape.wave {
+  height: initial;
+  width: 70px;
+}
+
+.overlay.overlay-sm .shape.xshape {
+  height: 30px;
+}
+
+.shape.square {
+    right: 68%;
+    top: 71%;
+}
+ 
+.shape.triangle {
+    right: 7%;
+    bottom: 75%;
+}
+ 
+.shape.xshape {
+    right: 4%;
+    bottom: 50%;
+}
+ 
+.shape.half-circle1 {
+    left: 50%;
+    bottom: 82%;
+}
+ 
+.shape.half-circle2 {
+    left: 5%;
+    bottom: 67%;
+}
+ 
+.shape.wave1 {
+    left: 20%;
+    bottom: 75%;
+}
+ 
+.shape.wave2 {
+    bottom: 8%;
+    right: 55%;
+}
+ 
+.shape.circle {
+    left: 38%;
+    bottom: 63%;
+}
+
+.points {
+    opacity: 0.3;
+    position: absolute;
+}
+
+header .points1 {
+    width: 320px;
+    bottom: -75px;
+    left: -100px;
+}
+
+header .points2 {
+    width: 320px;
+    bottom: -65px;
+    right: -120px;
+}
+
+.letters {
+    position: absolute;
+    width:10.5%;
+    top: -5px;
+    left: 10px;
+    opacity: 0.06;
 }
 /*End Header*/
