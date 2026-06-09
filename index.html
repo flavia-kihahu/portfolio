@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    <!-- <script src="./app.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -117,11 +121,11 @@
             </div>
             <div class="section-body">
                 <div class="filter">
-                    <button class="filter-btn active">All</button>
-                    <button class="filter-btn">UI/UX</button>
-                    <button class="filter-btn">Web Dev</button>
-                    <button class="filter-btn">Mobile App</button>
-                    <button class="filter-btn">Logo Design</button>
+                    <button class="filter-btn active" data-filter="*" >All</button>
+                    <button class="filter-btn" data-filter=".ui">UI/UX</button>
+                    <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+                    <button class="filter-btn" data-filter=".appdev">Mobile App</button>
+                    <button class="filter-btn" data-filter=".logo-design">Logo Design</button>
                 </div>
             <div class="grid">
                 <div class="grid-item logo-design">
@@ -323,7 +327,7 @@
       <section class="project section">
         <div class="container">
           <div class="section-header">
-            <h3 class="title" data-title="Last News">My project</h3>
+            <h3 class="title" data-title="Last News">My projects</h3>
             <p class="text">
               Here are the projects I have worked on
             </p>
@@ -345,13 +349,12 @@
                 <div class="project-content">
                   <div class="project-info">
                     <h5 class="poject-date">April, 1 2026</h5>
-                    <h5 class="project-user"><i class="fas fa-user"></i>Admin</h5>
                   </div>
                   <h3 class="title-sm">UniStay</h3>
-                  <p class="project-text">
+                  <!-- <p class="project-text">
                     Lorem ipsum, dolor sit amet elit. rem poimus? Tempora
                     expedita eos autem! Lorem ipsum, dolor sit met.
-                  </p>
+                  </p> -->
                   <a href="#" class="btn small">Read more</a>
                 </div>
               </div>
@@ -366,13 +369,12 @@
                 <div class="project-content">
                   <div class="project-info">
                     <h5 class="project-date">July, 31 2025</h5>
-                    <h5 class="project-user"><i class="fas fa-user"></i>Admin</h5>
                   </div>
                   <h3 class="title-sm">MediPulse</h3>
-                  <p class="project-text">
+                  <!-- <p class="project-text">
                     Lorem ipsum, dolor sit amet elit. Sint atque culpa repellat
                     sunt sit amet nobis! Lorem ipsum dolor sit amet.
-                  </p>
+                  </p> -->
                   <a href="#" class="btn small">Read more</a>
                 </div>
               </div>
@@ -386,7 +388,6 @@
                 <div class="project-content">
                   <div class="project-info">
                     <h5 class="project-date">June, 12 2025</h5>
-                    <h5 class="project-user"><i class="fas fa-user"></i>Admin</h5>
                   </div>
                   <h3 class="title-sm">This is a short title</h3>
                   <p class="project-text">
@@ -499,12 +500,12 @@
                   </div>
                 </div>
 
-                <div class="review-nav swiper-button-prev">
+                <!-- <div class="review-nav swiper-button-prev">
                   <i class="fas fa-long-arrow-alt-left"></i>
                 </div>
                 <div class="review-nav swiper-button-next">
                   <i class="fas fa-long-arrow-alt-right"></i>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -640,9 +641,6 @@
                 <a href="#">App Design</a>
               </li>
               <li>
-                <a href="#">Marketing</a>
-              </li>
-              <li>
                 <a href="#">UI Design</a>
               </li>
             </ul>
@@ -703,6 +701,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
